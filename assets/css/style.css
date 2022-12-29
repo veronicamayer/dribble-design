@@ -1,0 +1,143 @@
+@font-face {
+    font-family: Playfair;
+    src: url("../fonts/PlayfairDisplay-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url("../fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: PoppinsExtraLight;
+    src: url("../fonts/Poppins-ExtraLight.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body {
+    height: 100vh;
+    background-color: #eeefe3;
+}
+
+/* header */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    margin: 2vh 0;
+    display: flex;
+    align-items: center;
+}
+
+nav img {
+    width: 50px;
+    margin: 0 10vw;
+}
+
+nav a {
+    margin: 0 2vw;
+}
+
+.login {
+    margin-right: 10vw;
+}
+
+a {
+    color: #333333;
+    text-decoration: none;
+}
+
+/* main */
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    margin-bottom: 5vh;
+}
+
+span {
+    font-family: Playfair;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 50px;
+    display: inline-block;
+}
+
+span::first-letter {
+    font-size: 80px;
+    
+}
+
+.articleLeft {
+    width: 42vw;
+    margin: 10vh 10vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.articleLeft div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.articleLeft p {
+    font-family: PoppinsExtraLight;
+    font-size: 19px;
+}
+
+.articleLeft a {
+    border-radius: 50px;
+    background-color: #fea916;
+    padding: 2vh 5vw;
+    margin: 5vh 0;
+    width: 20vw;
+    font-size: 20px;
+    text-align: center;
+}
+
+.articleLeft img {
+    width: 20vw;
+    margin-top: 10vh;
+}
+
+.grafik {
+    width: 48vw;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    right: 5vw;
+}
+
+.articleRight {
+    position: relative;
+}
+
+.articleRight div {
+    position: absolute;
+    bottom: 0;
+    right: 5vw;
+    display: flex;
+}
+
+.articleRight div a {
+    margin: 5vh 1vw;
+}
+
+.articleRight div a img {
+    width: 30px;
+}
+
